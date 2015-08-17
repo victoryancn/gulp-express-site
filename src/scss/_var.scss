@@ -1,0 +1,36 @@
+body {
+  font: 14px "STHeitiSC-Light", Helvetica, "Lantinghei SC", "Hiragino Sans GB", "Microsoft YaHei", STHeiti, "WenQuanYi Micro Hei", SimSun, sans-serif;
+  font-weight: 300;
+  margin: 0px;
+  height:100%;
+}
+html{
+  height:100%;
+}
+//var
+$vehicle-content-color: rgb(128,128,128) !default;
+$vehicle-border-color: rgb(228,228,228) !default;
+$text-xl: 1.2rem !default;
+$text-large: 1.1rem !default;
+$text-default: 1rem !default;
+$text-md: .9rem !default;
+$text-sm: .8rem !default;
+$text-xs: .6rem !default;
+$bg-green: #8ad176;
+//util
+.pull-left{
+  float:left;
+}
+@mixin display-flex{
+  box-sizing: border-box !important;
+  display: -webkit-flex !important;
+  display: -moz-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+.pt0{
+  padding-top:0px !important;
+}
+.clear{
+  clear: both;
+}

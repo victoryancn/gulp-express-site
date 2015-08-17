@@ -1,0 +1,14 @@
+{
+  "name": "express-test",
+  "version": "0.0.1",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components"
+  ],
+  "dependencies": {
+    "slick.js": "~1.5.5",
+    "normalize.css": "~3.0.3",
+    "fullpage": "~2.6.7"
+  }
+}

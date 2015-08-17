@@ -1,0 +1,477 @@
+.app {
+  height: 100%;
+  .app-web {
+    font-family: 'Helvetica Neue', Helvetica, 'Lantinghei SC', 'Hiragino Sans GB', 'Microsoft YaHei', STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif;
+    min-width: 1100px;
+    height: 100%;
+    .app-title {
+      background-color: $bg-green;
+      position: relative;
+      width: 100%;
+      height: 600px;
+      z-index: 2;
+    }
+    .app-title-buttom {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 70%;
+      //background: url(../res/image/app/c_app_title_bottom.png) center center fixed no-repeat;
+      background-image: url(../res/image/app/c_app_title_bottom.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: -1;
+    }
+    .app-title-phone {
+      position: absolute;
+      width: 300px;
+      left: 50%;
+      margin-left: 220px;
+      bottom: 0;
+    }
+    @media screen and (min-width: 1100px) {
+      .app-title-content {
+        font-size: 48px;
+        color: rgb(255, 255, 255);
+        padding-left: 15%;
+        text-shadow: 0px 1px 0px rgba(7, 0, 2,.24);
+        padding-top: 115px;
+        > :nth-child(2) {
+          > :nth-child(2) {
+            font-size: 30px;
+            color: rgb(57, 118, 40);
+            text-shadow: 0px 1px 0px rgba( 105, 255, 62 ,0.42);
+          }
+        }
+        > :nth-child(3) {
+          font-size: 30px;
+          color: rgb(57, 118, 40);
+          line-height: 1.933;
+          text-shadow: 0px 1px 0px rgba( 105, 255, 62 ,0.42);
+        }
+        .app-title-qrcode {
+          width: 170px;
+          margin-top: 19px;
+        }
+        .discreption {
+          font-size: 21.601px;
+          color: rgb(26, 109, 3);
+          line-height: 1.25;
+          margin-left: 35px;
+        }
+      }
+    }
+    @media screen and (max-width: 1100px) {
+      .app-title-content {
+        font-size: 43px;
+        color: rgb(255, 255, 255);
+        padding-left: 15%;
+        text-shadow: 0px 1px 0px rgb(7, 0, 2);
+        padding-top: 115px;
+        > :nth-child(2) {
+          > :nth-child(2) {
+            font-size: 20px;
+            color: rgb(57, 118, 40);
+            text-shadow: 0px 1px 0px rgb(105, 255, 62);
+          }
+        }
+        > :nth-child(3) {
+          font-size: 25px;
+          color: rgb(57, 118, 40);
+          line-height: 1.933;
+          text-shadow: 0px 1px 0px rgb(105, 255, 62);
+        }
+        .app-title-qrcode {
+          width: 170px;
+          margin-top: 19px;
+        }
+        .discreption {
+          font-size: 21.601px;
+          color: rgb(26, 109, 3);
+          line-height: 1.25;
+          margin-left: 35px;
+        }
+      }
+    }
+    .app-content {
+      padding-top: 50px;
+      position: relative;
+      hr {
+        margin-bottom: 140px;
+      }
+      img {
+        width: 100%;
+      }
+      .app-content-cheshi-title {
+        font-size: 30px;
+        color: #555;
+        position: absolute;
+        padding: 0 40px;
+        left: 50%;
+        margin-left: -100px;
+        top: 33px;
+        background-color: #fff;
+      }
+      .app-content-cheshi {
+        margin: 0 auto;
+        padding-top: 140px;
+        width: 900px;
+        clear: both;
+        > div {
+          width: 50%;
+          float: left;
+          > div {
+            font-size: 43px;
+            color: rgb(76, 76, 76);
+            line-height: 1.065;
+          }
+        }
+        > :last-child {
+          box-sizing: border-box;
+          padding-top: 170px;
+          padding-left: 150px;
+          > :last-child {
+            margin-top: 50px;
+            font-size: 30px;
+          }
+        }
+      }
+      .app-content-kanxin {
+        margin: 0 auto;
+        padding-top: 140px;
+        width: 900px;
+        clear: both;
+        > div {
+          width: 50%;
+          float: left;
+          > div {
+            font-size: 43px;
+            color: rgb(76, 76, 76);
+            line-height: 1.065;
+          }
+        }
+        .content {
+          box-sizing: border-box;
+          padding-top: 170px;
+          padding-right: 150px;
+          > :last-child {
+            margin-top: 50px;
+            font-size: 30px;
+          }
+        }
+      }
+      .app-content-qr {
+        clear: both;
+        margin: 0 auto;
+        width: 900px;
+        padding-top: 140px;
+        padding-bottom: 50px;
+        text-align: center;
+        hr {
+          margin-bottom: 50px;
+        }
+        > div {
+          font-size: 36px;
+          color: rgb(0, 0, 0);
+          line-height: 1.278;
+        }
+        img {
+          width: 170px;
+          margin: 50px;
+        }
+        > :last-child {
+          font-size: 14px;
+          color: rgb(102, 102, 102);
+        }
+      }
+    }
+    footer {
+      background-color: rgb(60, 60, 60);
+      box-shadow: 0px -1px 0px 0px rgb(222, 222, 222);
+      width: 100%;
+      height: 262px;
+      color: rgb(255,231,237);
+      position: relative;
+      a{
+        color: rgb(255,231,237);
+        text-decoration: none;
+        margin:0 10px;
+      }
+      >:first-child{
+        padding-top:45px;
+        padding-left: 10%;
+        >:first-child{
+          margin-left: 0px;
+        }
+      }
+      >:nth-child(2){
+        padding-top:30px;
+        padding-left: 10%;
+      }
+      >:last-child{
+        text-align:center;
+        color:rgb(145,145,145);
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        margin-left: -215px;
+      }
+    }
+  }
+  @media screen and (max-width: 550px)  {
+    .app-web {
+      display: none !important;
+    }
+    .app-mobile{
+      display: block !important;
+    }
+  }
+  .app-mobile {
+      display: none;
+      height: 100%;
+      .app-page-one {
+        background-color: $bg-green;
+        height: 100%;
+        position: relative;
+
+        @media screen and (min-device-height: 650px) {
+          .app-page-one-img {
+            padding: 6%;
+            position: relative;
+            img {
+              width: 20%;
+              float: right;
+            }
+            span {
+              font-size: 2rem;
+              position: absolute;
+              color: #fff;
+              left: 40%;
+              top: 40%;
+            }
+          }
+          .app-page-one-title {
+            clear: both;
+            font-size: 1.6rem;
+            color: #fff;
+            width: 75%;
+            margin: 0 auto 3%;
+          }
+          .app-page-one-content {
+            color: #fff;
+            width: 75%;
+            line-height: 1.8;
+            margin: 0 auto;
+            > :first-child {
+              font-size: 1.3rem;
+            }
+            > :nth-child(2) {
+              font-size: .9rem;
+              color: rgb(57, 118, 40);
+            }
+            > :nth-child(3) {
+              font-size: .9rem;
+              color: rgb(57, 118, 40);
+            }
+          }
+          .app-instent-download {
+            text-align: center;
+            margin-top: 10%;
+            a {
+              text-decoration: none;
+              color: #fff;
+              padding: 3% 15%;
+              border: 2px solid;
+              border-radius: 5px;
+              font-size: 1rem;
+            }
+          }
+          .app-mobile-bottom-img {
+            position: absolute;
+            bottom: 0;
+            z-index: 1;
+            width: 50%;
+            left: 25%;
+          }
+          @media (orientation: landscape) {
+            .app-mobile-bottom-img{
+              display:none;
+            }
+            .app-page-one-img {
+              padding: 4%;
+              position: relative;
+              img {
+                width: 10%;
+                float: right;
+              }
+              span {
+                font-size: 2rem;
+                position: absolute;
+                color: #fff;
+                left: 40%;
+                top: 40%;
+              }
+            }
+          }
+          }
+        @media screen and (max-height: 650px) {
+          .app-page-one-img {
+            padding: 4%;
+            position: relative;
+            img {
+              width: 15%;
+              float: right;
+            }
+            span {
+              font-size: 2rem;
+              position: absolute;
+              color: #fff;
+              left: 40%;
+              top: 40%;
+            }
+          }
+          .app-page-one-title {
+            clear: both;
+            font-size: 1.4rem;
+            color: #fff;
+            width: 75%;
+            margin: 0 auto 3%;
+          }
+          .app-page-one-content {
+            color: #fff;
+            width: 75%;
+            line-height: 1.8;
+            margin: 0 auto;
+            > :first-child {
+              font-size: 1.2rem;
+            }
+            > :nth-child(2) {
+              font-size: .8rem;
+              color: rgb(57, 118, 40);
+            }
+            > :nth-child(3) {
+              font-size: .8rem;
+              color: rgb(57, 118, 40);
+            }
+          }
+          .app-instent-download {
+            text-align: center;
+            margin-top: 10%;
+            a {
+              text-decoration: none;
+              color: #fff;
+              padding: 2% 10%;
+              border: 2px solid;
+              border-radius: 5px;
+              font-size: 1rem;
+            }
+          }
+          .app-mobile-bottom-img {
+            position: absolute;
+            bottom: 0;
+            z-index: 1;
+            width: 30%;
+            left: 35%;
+          }
+            @media (orientation: landscape) {
+              .app-mobile-bottom-img {
+                display: none;
+              }
+              .app-page-one-img{
+                padding: 4%;
+                position: relative;
+                img {
+                  width: 10%;
+                  float: right;
+                }
+                span {
+                  font-size: 2rem;
+                  position: absolute;
+                  color: #fff;
+                  left: 40%;
+                  top: 40%;
+                }
+              }
+            }
+          }
+
+        .app-mobile-buttom {
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          height: 30%;
+          background-image: url(../res/image/app/c_app_title_bottom.png);
+          background-repeat: no-repeat;
+          background-size: cover;
+          z-index: 0;
+        }
+
+      }
+      .app-page-two {
+        background-color: #fff;
+        height: 100%;
+        .app-page-two-img {
+          height: 80%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          img {
+            width: 80%;
+          }
+        }
+        .app-page-two-content{
+          text-align: center;
+          height: 20%;
+          background-color: rgb(85, 196, 85);
+          color: #fff;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-around;
+          div {
+            font-size: 1.4rem;
+            //padding: 4% 0;
+          }
+          > :last-child {
+            font-size: 1.3rem;
+          }
+        }
+      }
+    .app-page-three{
+      background-color: #fff;
+      height: 100%;
+      .app-page-three-img{
+        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+          width:25%;
+        }
+      }
+      .app-page-three-download{
+        height:20%;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        a{
+          text-decoration: none;
+          font-size: 1.3rem;
+          background-color: rgb(66, 172, 68);
+          color:#fff;
+          padding: 4% 10%;
+        }
+      }
+      .app-page-discription{
+        height:30%;
+        text-align: center;
+        font-size: 1rem;
+        color:rgb(86,87,88);
+      }
+    }
+    .fp-tableCell{
+      display:block !important;
+    }
+  }
+}
+
